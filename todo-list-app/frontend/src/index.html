@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-List App</title>
     <link rel="stylesheet" href="../src/styles/style.css">
-    <script src="../src/scripts/script.ts"></script>
+    <script src="../src/scripts/script.js"></script>
 </head>
 <body>
     <header class="header"><h1 class="app-name">Todo-List App</h1></header>
@@ -14,30 +14,51 @@
         <section class="container insert">
             <div class="content">
                 <h2>Add New Task</h2>
-                <form action="" class="form-layout">
-                    <select name="category" id="category" class="category">
+                <div class="form-layout">
+                    <select name="category" id="category" class="category" required>
                         <option value="none" selected disabled hidden>Select a category</option>
                         <option value="work">Work</option>
                         <option value="personal">Personal</option>
                         <option value="shopping">Shopping</option>
                         <option value="other">Other</option>
                     </select>
-                    <select name="priority" id="priority" class="priority">
+                    <select name="priority" id="priority" class="priority" required>
                         <option value="none" selected disabled hidden>Select a priority</option>
                         <option value=3>High</option>
                         <option value=2>Medium</option>
                         <option value=1>Low</option>
                     </select>
                     <input type="date" name="dueDate" id="dueDate" class="due-date">
-                    <textarea type="text" name="new-task" id="new-task" placeholder="Enter a new task" class="new-task"></textarea>
-                </form>
-                <button type="submit" class="add-task">Add Task</button>
+                    <textarea type="text" name="new-task" id="new-task" placeholder="Enter a new task" class="new-task" required></textarea>
+                    <button type="submit" class="add-task">Add Task</button>
+                </div>
             </div>
         </section>
         <section class="container list">
             <div class="content">
                 <h2>Task List</h2>
-
+                <div class="task-list">
+                    <!-- <div class="task-item" style="border-left: .8rem solid green;">
+                        <div class="task-info">
+                            <p class="task-name">Task Name</p>
+                            <p class="task-due-date">Due Date</p>
+                        </div>
+                        <div class="task-actions">
+                            <p class="task-category">Category</p>
+                            <button class="delete-task">Delete</button>
+                        </div>
+                    </div>
+                    <div class="task-item" style="border-left: .8rem solid red;">
+                        <div class="task-info">
+                            <p class="task-name">Another Task</p>
+                            <p class="task-due-date">Another Due Date</p>
+                        </div>
+                        <div class="task-actions">
+                            <p class="task-category">Another Category</p>
+                            <button class="delete-task">Delete</button>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </section>
 
