@@ -1,19 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     padding: 0;
     border: none;
     margin: 0;
     box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
 
 body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    background: #E1E1E1;
 }
 
-h1 {
-    color: red;
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    background: linear-gradient(to top, #8800FF, #520099);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+}
+
+.header .app-name {
     width: fit-content;
+    color: white;
+    font-size: 2em;
     text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1.2rem 1rem 0 1rem;
+    gap: 2rem;
+}
+
+.container {
+    flex: 1;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 38rem;
+    background: linear-gradient(to bottom, #644FFF, #3C3099);
+    
+}
+
+.container .content {
+    height: 100%;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: wheat; */
+    margin: 0 1.8rem;
+}
+
+.container .content h2 {
+    width: 100%;
+    height: fit-content;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 1.6rem 0;
+    /* border: .2rem solid #8800FF;  */
+}
+
+.insert {
+    border-top-left-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.insert .form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.insert .form-layout select {
+    width: 100%;
+    height: 3rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.2em;
+    color: #757575;
+}
+
+.insert .form-layout .due-date {
+    width: 100%;
+    height: 3rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.2em;
+    color: #757575;
+}
+.insert .form-layout .new-task {
+    width: 100%;
+    height: 12rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.2em;
+    resize: none;
+}
+
+.insert .add-task {
+    width: 100%;
+    height: 3rem;
+    border: .1rem solid grey;
+    border-radius: 10rem;
+    font-size: 1.2em;
+    color: #757575;
+    background-color: white;
+    cursor: pointer;
+    inset: 1;
+}
+
+.insert .add-task:hover {
+    background-color: #8800FF;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    scale: 1.05;
+    border: .2rem solid cyan;
+}
+
+.list {
+    border-top-right-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }

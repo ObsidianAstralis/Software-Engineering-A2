@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="../src/styles/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header class="header"><h1 class="app-name">Todo-List App</h1></header>
+    <main>
+
+        <section class="container insert">
+            <div class="content">
+                <h2>Add New Task</h2>
+                <form action="" class="form-layout">
+                    <select name="category" id="category" class="category">
+                        <option value="none" selected disabled hidden>Select a category</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <select name="priority" id="priority" class="priority">
+                        <option value="none" selected disabled hidden>Select a priority</option>
+                        <option value=3>High</option>
+                        <option value=2>Medium</option>
+                        <option value=1>Low</option>
+                    </select>
+                    <input type="date" name="dueDate" id="dueDate" class="due-date">
+                    <textarea type="text" name="new-task" id="new-task" placeholder="Enter a new task" class="new-task"></textarea>
+                </form>
+                <button type="submit" class="add-task">Add Task</button>
+            </div>
+        </section>
+        <section class="container list">
+            <div class="content">
+                <h2>Task List</h2>
+
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
